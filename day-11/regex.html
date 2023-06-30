@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regex</title>
+</head>
+
+<body>
+    <h1>Example of regex</h1>
+    <script>
+        const regex = /game/g
+
+        let b = "The game is played from either a third-person or first-person perspective. In the game, up to one hundred players parachute onto an island where they scavenge for weapons and equipment to kill other players while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into an ever tightening space to force encounters. The last surviving player (or team) wins the round."
+        a = b.replace("game", "pubg")
+
+        document.write(b);
+
+        document.write("<hr/><br>", b.replace(regex, "pubg"));
+
+    </script>
+
+</body>
+
+</html>
